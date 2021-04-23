@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="59px" viewBox="0 0 375 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>background_shape_1</title>
+    <g id="App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NF_CourseApp_Screen1" fill="#F8F8F8">
+            <g id="Header" transform="translate(0.000000, -1.000000)">
+                <g id="Group-3">
+                    <path d="M0,53.9587337 C17.3793971,53.3381428 76,39.1304348 161.151398,53.9587337 C246.302797,68.7870326 293.036485,48.7523629 375,56.0495518 C375,37.2791279 375,18.7919161 375,0.587916351 L0,0.587916351 C0,16.1987139 0,33.9889863 0,53.9587337 Z" id="background_shape_1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
