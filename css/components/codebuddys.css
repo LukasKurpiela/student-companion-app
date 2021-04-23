@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .buddy-card__item {
@@ -17,4 +18,10 @@
   border-bottom: 1px solid var(--primary-200);
   bottom: 5px;
   width: 100%;
+}
+
+.buddy-card__plus {
+  position: absolute;
+  top: 47.2px;
+  right: 146px;
 }
