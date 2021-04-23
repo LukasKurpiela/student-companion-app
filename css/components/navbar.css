@@ -1,0 +1,51 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 20px 20px 20px;
+  height: 44px;
+  align-items: center;
+}
+
+.footer__item {
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+}
+
+.footer__item--dashboard {
+  content: url(../../images/DashboardIcon.svg);
+}
+
+.footer__item--buddy {
+  content: url(../../images/BuddyIcon.svg);
+}
+
+.footer__item--team {
+  content: url(../../images/TeamIcon.svg);
+}
+
+.footer__item--energy {
+  content: url(../../images/EnergyIcon.svg);
+}
+
+.footer__item--journal {
+  content: url(../../images/JournalIcon.svg);
+}
+
+.footer__item--inactive {
+  opacity: 0.5;
+}
+
+.footer__item--inactive:hover {
+  opacity: 1;
+  transition: all 0.8s ease;
+  /* fill-opacity: 0.5;
+    fill: red; */
+}
