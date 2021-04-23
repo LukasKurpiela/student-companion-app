@@ -16,8 +16,8 @@
       <form class="journal" action="">
         <p class="text__semi16--dark">TODAY, 23.04.2021</p>
         <section class="journal__rating">
-          <p class="text__semi16--dark mb-12">Rating:</p>
-          <div class="journal__stars pb-1">
+          <p class="text__semi14 mb-12">Rating:</p>
+          <div class="journal__stars">
             <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
             <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
             <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
@@ -26,9 +26,9 @@
           </div>
         </section>
         <section class="journal__comprehension">
-          <p class="text__semi16--dark mb-12">Comprehension:</p>
+          <p class="text__semi14 mb-12">Comprehension:</p>
 
-          <div class="journal__rectangles pb-1">
+          <div class="journal__rectangles">
             <img
               class="journal__rectangle"
               src="images/Rectangle.svg"
@@ -82,16 +82,19 @@
           </div>
         </section>
         <section class="journal__motto">
-          <p class="text__semi16--dark pb-1">Motto:</p>
+          <p class="text__semi14 mb-10">Motto:</p>
           <textarea class="pb-1" name="" id="" cols="30" rows="10"></textarea>
         </section>
         <section class="journal__notes">
-          <p class="text__semi16--dark pb-1">Notes:</p>
+          <p class="text__semi14 mb-10">Notes:</p>
           <textarea class="pb-1" name="" id="" cols="30" rows="10"></textarea>
         </section>
         <section class="journal__buttons">
-          <button>Cancel</button>
-          <button>Save</button>
+          <button class="journal__cancel text__semi16--dark">Cancel</button>
+          <button class="journal__save text__semi16--dark">
+            Save
+            <img src="images/iconmonstr-check-mark-1.svg" alt="Check Icon" />
+          </button>
         </section>
       </form>
     </main>
