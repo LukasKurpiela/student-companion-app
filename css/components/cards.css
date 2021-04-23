@@ -1,0 +1,20 @@
+main {
+  margin-top: 10rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card__stars,
+.card__rectangles {
+  padding: 1rem 0;
+}
+
+.card__star,
+.card__rectangle {
+  padding: 0 2px;
+}
