@@ -2,15 +2,20 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 100;
+  background-color: white;
 }
 
 .footer__container {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
+  list-style: none;
   margin: 0 20px 20px 20px;
   height: 44px;
   align-items: center;
+  align-content: center;
+  padding-left: 0px;
+  padding-top: 5px;
 }
 
 .footer__item {
