@@ -6,15 +6,15 @@ main {
   border-radius: 0.5rem;
   width: 315px;
 
-  margin: 0 auto;
-  padding: 0.3rem 1rem;
+  margin: 1.5rem auto;
+  padding: 1rem 1rem;
 }
 
 .card__rating,
 .card__comprehension,
 .card__motto,
 .card__notes {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .card__rectangle {
@@ -46,4 +46,8 @@ main {
 
 .card__notes {
   width: 275px;
+}
+
+.card > p {
+  padding-bottom: 1.5rem;
 }

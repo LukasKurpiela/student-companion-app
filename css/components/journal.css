@@ -1,0 +1,28 @@
+.rate__btn {
+  width: 200px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+
+  background-color: var(--secondary-400);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.rate__star {
+  width: 13.33px;
+  height: 12.67px;
+}
+
+.journal__stars {
+  display: flex;
+  justify-content: space-around;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.journal__star {
+  width: 35.75px;
+  height: 34.46px;
+}
