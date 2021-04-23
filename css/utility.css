@@ -1,0 +1,19 @@
+.border__in--light {
+  border: 1px solid #e0e4e8;
+  border-radius: 10px;
+}
+
+.border__in--dark {
+  border: 1px solid #7589a2;
+  border-radius: 10px;
+}
+
+.border__shadow--grey {
+  border-radius: 10px;
+  box-shadow: 0 2px 11px hsla(213, 52.8%, 20.8%, 0.2);
+}
+
+.border__shadow--orange {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px hsla(11, 100%, 60.6%, 0.4);
+}
