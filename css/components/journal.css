@@ -15,6 +15,10 @@
   height: 12.67px;
 }
 
+.journal__rating {
+  margin-bottom: 23.54px;
+}
+
 .journal__stars {
   display: flex;
   justify-content: space-around;
@@ -25,4 +29,13 @@
 .journal__star {
   width: 35.75px;
   height: 34.46px;
+}
+
+.journal {
+  padding: 0 30px;
+  width: 375px;
+}
+
+.journal > p {
+  margin-bottom: 30px;
 }
