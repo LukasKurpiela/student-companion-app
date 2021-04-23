@@ -1,6 +1,7 @@
 .buddy-card {
-  margin: 0 30px;
+  width: 315px;
   height: 116px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,4 +11,10 @@
 .buddy-card__item {
   height: 58px;
   margin: 18px auto;
+}
+
+.buddy-card__line {
+  border-bottom: 1px solid var(--primary-200);
+  bottom: 5px;
+  width: 100%;
 }
