@@ -48,7 +48,6 @@ body {
   font-size: 16px;
   line-height: 1rem;
   color: var(--primary-400);
-  text-align: center;
 }
 
 .text__semi16--light {
@@ -79,5 +78,11 @@ body {
   font-size: 12px;
   line-height: 1.333rem;
   color: var(--primary-300);
-  text-transform: uppercase;
+}
+
+.text__regular12--dark {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.333rem;
+  color: var(--primary-400);
 }
