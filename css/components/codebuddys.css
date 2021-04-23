@@ -1,0 +1,13 @@
+.buddy-card {
+  margin: 0 30px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buddy-card__item {
+  height: 58px;
+  margin: 18px auto;
+}
