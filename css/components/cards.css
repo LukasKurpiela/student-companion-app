@@ -4,17 +4,46 @@ main {
 
 .card {
   border-radius: 0.5rem;
-  width: 80vw;
+  width: 315px;
+
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.3rem 1rem;
 }
 
-.card__stars,
+.card__rating,
+.card__comprehension,
+.card__motto,
+.card__notes {
+  margin: 1rem 0;
+}
+
+.card__rectangle {
+  width: 22px;
+  height: 22px;
+}
+
 .card__rectangles {
-  padding: 1rem 0;
+  width: 274px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__star {
+  width: 24.82px;
+  height: 23.63px;
+}
+
+.card__stars {
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
 }
 
 .card__star,
 .card__rectangle {
   padding: 0 2px;
+}
+
+.card__notes {
+  width: 275px;
 }

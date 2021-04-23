@@ -17,3 +17,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px hsla(11, 100%, 60.6%, 0.4);
 }
+
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
