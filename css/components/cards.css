@@ -4,9 +4,17 @@ main {
 
 .card {
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 7px rgba(211, 211, 211, 0.479),
-    -1px -1px 7px rgba(211, 211, 211, 0.479);
   width: 80vw;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.card__stars,
+.card__rectangles {
+  padding: 1rem 0;
+}
+
+.card__star,
+.card__rectangle {
+  padding: 0 2px;
 }
