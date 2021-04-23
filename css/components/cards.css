@@ -1,0 +1,12 @@
+main {
+  margin-top: 10rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 7px rgba(211, 211, 211, 0.479),
+    -1px -1px 7px rgba(211, 211, 211, 0.479);
+  width: 80vw;
+  margin: 0 auto;
+  padding: 1rem;
+}
