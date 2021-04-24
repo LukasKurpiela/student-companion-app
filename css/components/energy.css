@@ -1,0 +1,34 @@
+.energy__card {
+  width: 315px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.energy__button {
+  width: 315px;
+  height: 48px;
+  margin: 0 auto 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  line-height: 1.5rem;
+}
+
+.energy__button--100 {
+  background-color: var(--secondary-400);
+  color: white;
+}
+
+.energy__button--75 {
+  background-color: var(--secondary-300);
+  color: white;
+}
+
+.energy__button--50 {
+  background-color: var(--secondary-200);
+  color: var(--secondary-400);
+}
+.energy__button--25 {
+  background-color: var(--secondary-100);
+  color: var(--secondary-400);
+}
