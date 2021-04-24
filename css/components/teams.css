@@ -1,27 +1,29 @@
-.buddy-card {
+.team-card__container {
+  margin-bottom: 30px;
+}
+
+.team-card__heading {
   width: 315px;
-  height: 116px;
+  margin: 0 auto;
+}
+
+.team-card {
+  width: 315px;
+  height: 232px;
   margin: 15px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
-.buddy-card__item {
+.team-card__item {
   height: 58px;
   margin: 18px auto;
 }
 
-.buddy-card__line {
+.team-card__line {
   border-bottom: 1px solid var(--primary-200);
   bottom: 5px;
   width: 100%;
-}
-
-.buddy-card__plus {
-  position: absolute;
-  top: 47.2px;
-  right: 146px;
 }
