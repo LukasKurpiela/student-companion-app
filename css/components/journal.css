@@ -65,6 +65,8 @@
 
 .journal__buttons {
   width: 315px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .journal__cancel,
