@@ -9,96 +9,105 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="text__bold16">DASHBOARD</h1>
+      <h1 class="text__bold16">JOURNAL</h1>
     </header>
 
     <main>
-      <article class="card border__shadow--grey">
-        <section class="card__rating">
-          <p class="text__regular12 pb-1">Rating:</p>
-          <div class="card__stars">
-            <img class="card__star" src="images/Star.svg" alt="Star Icon" />
-            <img class="card__star" src="images/Star.svg" alt="Star Icon" />
-            <img class="card__star" src="images/Star.svg" alt="Star Icon" />
-            <img class="card__star" src="images/Star.svg" alt="Star Icon" />
-            <img class="card__star" src="images/Star.svg" alt="Star Icon" />
+      <form class="journal" action="">
+        <p class="text__semi16--dark">TODAY, 23.04.2021</p>
+        <section class="journal__rating">
+          <p class="text__semi14 mb-12">Rating:</p>
+          <div class="journal__stars">
+            <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
+            <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
+            <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
+            <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
+            <img class="journal__star" src="images/Star.svg" alt="Star Icon" />
           </div>
         </section>
-        <section class="card__comprehension">
-          <p class="text__regular12 pb-1">Comprehension:</p>
-          <div class="card__rectangles">
+        <section class="journal__comprehension">
+          <p class="text__semi14 mb-12">Comprehension:</p>
+
+          <div class="journal__rectangles">
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
             <img
-              class="card__rectangle"
+              class="journal__rectangle"
               src="images/Rectangle.svg"
               alt="Rectangle Icon"
             />
           </div>
         </section>
-        <section class="card__motto">
-          <p class="text__regular12 pb-1">Motto:</p>
-          <p class="text__semi16--dark">"Thats life in the city"</p>
+        <section class="journal__motto">
+          <p class="text__semi14 mb-10">Motto:</p>
+          <textarea class="pb-1" name="" id="" cols="30" rows="10"></textarea>
         </section>
-        <section class="card__notes">
-          <p class="text__regular12 pb-1">Notes:</p>
-          <p class="text__regular12--dark">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nihil
-            laboriosam sequi tenetur tempora consequuntur voluptas error.
-            Corrupti voluptate excepturi deserunt minima dolor, delectus
-            consequuntur debitis, ullam tempore magnam quos.
-          </p>
+        <section class="journal__notes">
+          <p class="text__semi14 mb-10">Notes:</p>
+          <textarea class="pb-1" name="" id="" cols="30" rows="10"></textarea>
         </section>
-      </article>
+        <section class="journal__buttons">
+          <button class="journal__cancel text__semi16--dark">Cancel</button>
+          <button class="journal__save text__semi16--dark">
+            Save
+            <img src="images/iconmonstr-check-mark-1.svg" alt="Check Icon" />
+          </button>
+        </section>
+      </form>
     </main>
     <footer class="footer">
       <nav>
         <ul class="footer__container border__shadow--grey">
           <li class="footer__item">
-            <a href="" class="footer__item--dashboard" alt="Dashboard Icon"></a>
+            <a
+              href="/index.html"
+              target="_blank"
+              class="footer__item--dashboard footer__item--inactive"
+              alt="Dashboard Icon"
+            ></a>
           </li>
           <li class="footer__item">
             <a
@@ -123,12 +132,7 @@
             ></a>
           </li>
           <li class="footer__item">
-            <a
-              href="/journal.html"
-              target="_blank"
-              class="footer__item--journal footer__item--inactive"
-              alt="Journal Icon"
-            ></a>
+            <a href="" class="footer__item--journal" alt="Journal Icon"></a>
           </li>
         </ul>
       </nav>

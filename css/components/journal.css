@@ -1,0 +1,103 @@
+.rate__btn {
+  width: 200px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+
+  background-color: var(--secondary-400);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.rate__star {
+  width: 13.33px;
+  height: 12.67px;
+}
+
+.journal {
+  padding: 0 30px;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.journal > p {
+  margin-bottom: 30px;
+}
+
+.journal__rating {
+  margin-bottom: 23.54px;
+}
+
+.journal__stars {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.journal__star {
+  width: 35.75px;
+  height: 34.46px;
+}
+
+.journal__comprehension {
+  margin-bottom: 18px;
+}
+
+.journal__rectangles {
+  display: flex;
+  justify-content: space-between;
+  width: 314px;
+  margin: 0 auto;
+}
+
+.journal__motto {
+  margin-bottom: 20px;
+}
+
+.journal__notes {
+  margin-bottom: 30px;
+}
+
+.journal__buttons {
+  width: 315px;
+}
+
+.journal__cancel,
+.journal__save {
+  width: 152px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+}
+
+.journal__cancel {
+  background: none;
+}
+
+.journal__save {
+  color: #fff;
+  background-color: #ff5a36;
+}
+
+.journal__save > img {
+  width: 14.63px;
+  height: 11.2px;
+}
+
+.journal__motto > textarea {
+  width: 315px;
+  height: 62px;
+  border-radius: 4px;
+  border: 1px solid #e0e4e8;
+  resize: none;
+}
+
+.journal__notes > textarea {
+  width: 315px;
+  height: 124px;
+  border-radius: 4px;
+  border: 1px solid #e0e4e8;
+  resize: none;
+}
