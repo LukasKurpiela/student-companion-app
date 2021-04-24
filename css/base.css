@@ -86,3 +86,12 @@ body {
   line-height: 1.333rem;
   color: var(--primary-400);
 }
+
+.energy__level {
+  width: 315px;
+  margin: 90px auto 10px auto;
+}
+
+.energy__level > p {
+  margin-bottom: 10px;
+}
