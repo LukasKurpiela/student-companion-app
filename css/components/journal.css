@@ -2,12 +2,15 @@
   width: 200px;
   height: 48px;
   margin: 0 auto;
-  display: block;
-
   background-color: var(--secondary-400);
   color: #fff;
   border-radius: 5px;
   border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.67px;
 }
 
 .rate__star {

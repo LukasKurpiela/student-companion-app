@@ -8,14 +8,14 @@ main {
   width: 315px;
 
   margin: 1.5rem auto;
-  padding: 1rem 1rem;
+  padding: 20px;
 }
 
 .card__rating,
 .card__comprehension,
 .card__motto,
 .card__notes {
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .card__rectangle {
@@ -27,6 +27,7 @@ main {
   width: 274px;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .card__star {
@@ -38,17 +39,19 @@ main {
   display: flex;
   justify-content: space-between;
   width: 205px;
-}
-
-.card__star,
-.card__rectangle {
-  padding: 0 2px;
+  margin-top: 10px;
 }
 
 .card__notes {
   width: 275px;
 }
 
+.card__motto > p:first-child,
+.card__notes > p:first-child {
+  margin-bottom: 10px;
+}
+
 .card > p {
-  padding-bottom: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 4px;
 }
