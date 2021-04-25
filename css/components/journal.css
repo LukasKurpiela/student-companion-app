@@ -1,7 +1,7 @@
 .rate__btn {
   width: 200px;
   height: 48px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   background-color: var(--secondary-400);
   color: #fff;
   border-radius: 5px;
@@ -79,6 +79,10 @@
 
 .journal__cancel {
   background: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .journal__save {

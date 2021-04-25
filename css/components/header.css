@@ -1,10 +1,10 @@
 .header {
   background: no-repeat url(../../images/background_shape_1.svg);
-  background-size: 100%;
+  background-size: cover;
   height: 58.99px;
   width: 375px;
 
-  margin: 0 auto;
+  margin: 0 auto 34px auto;
 
   position: fixed;
   top: 0;
@@ -12,7 +12,18 @@
   right: 0;
 
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  z-index: 100;
+}
+
+.header__large {
+  height: 81px;
+  justify-content: flex-end;
+}
+
+.header__large p {
+  padding-bottom: 25px;
 }

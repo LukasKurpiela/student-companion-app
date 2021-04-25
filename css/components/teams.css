@@ -10,7 +10,7 @@
 .team-card {
   width: 315px;
   height: 232px;
-  margin: 15px auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

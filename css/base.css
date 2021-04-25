@@ -35,6 +35,11 @@ body {
   font-size: 1.25rem;
 }
 
+main {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
 .text__bold16 {
   font-weight: 700;
   font-size: 16px;
