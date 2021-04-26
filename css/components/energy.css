@@ -14,26 +14,26 @@
   line-height: 1.5rem;
 }
 
-.energy__button--100 {
-  background-color: var(--secondary-400);
+.energy__button100 {
+  background-color: var(secondary-400);
   color: white;
   letter-spacing: 0.1em;
 }
 
-.energy__button--75 {
-  background-color: var(--secondary-300);
+.energy__button75 {
+  background-color: var(secondary-300);
   color: white;
   letter-spacing: 0.1em;
 }
 
-.energy__button--50 {
-  background-color: var(--secondary-200);
-  color: var(--secondary-400);
+.energy__button50 {
+  background-color: var(secondary-200);
+  color: var(secondary-400);
   letter-spacing: 0.1em;
 }
-.energy__button--25 {
-  background-color: var(--secondary-100);
-  color: var(--secondary-400);
+.energy__button25 {
+  background-color: var(secondary-100);
+  color: var(secondary-400);
   letter-spacing: 0.1em;
 }
 
@@ -45,84 +45,77 @@
   grid-template-rows: repeat(208, 1px);
 }
 
-.energy__percent--100 {
+[class*="energy__percent"] {
+  grid-column: 1 / span 32;
+}
+
+.energy__percent100 {
   grid-row: 1 / span 18;
-  grid-column: 1 / 2;
 }
 
-.energy__percent--75 {
+.energy__percent75 {
   grid-row: 43 / span 18;
-  grid-column: 1 / 33;
 }
 
-.energy__percent--50 {
+.energy__percent50 {
   grid-row: 85 / span 18;
-  grid-column: 1 / 33;
 }
 
-.energy__percent--25 {
+.energy__percent25 {
   grid-row: 127 / span 18;
-  grid-column: 1 / 33;
 }
 
-.energy__percent--0 {
+.energy__percent0 {
   grid-row: 169 / span 18;
-  grid-column: 1 / 33;
 }
 
-.energy__time--1 {
+[class*="energy__time"] {
   grid-row: 191 / span 18;
+}
+
+.energy__time1 {
   grid-column: 47 / span 31;
 }
 
-.energy__time--2 {
-  grid-row: 191 / span 18;
+.energy__time2 {
   grid-column: 104 / span 31;
 }
 
-.energy__time--3 {
-  grid-row: 191 / span 18;
+.energy__time3 {
   grid-column: 161 / span 31;
 }
 
-.energy__time--4 {
-  grid-row: 191 / span 18;
+.energy__time4 {
   grid-column: 218 / span 31;
 }
 
-.energy__time--5 {
-  grid-row: 191 / span 18;
+.energy__time5 {
   grid-column: 275 / span 31;
+}
+
+[class*="energy__line"] {
+  grid-column: 37 / span 279;
+  background-color: #e0e4e8;
 }
 
 .energy__line1 {
   grid-row: 14 / span 1;
-  grid-column: 37 / span 279;
-  background-color: #e0e4e8;
 }
 
 .energy__line2 {
   grid-row: 56 / span 1;
-  grid-column: 37 / span 279;
-  background-color: #e0e4e8;
 }
 
 .energy__line3 {
   grid-row: 98 / span 1;
-  grid-column: 37 / span 279;
-  background-color: #e0e4e8;
 }
 
 .energy__line4 {
   grid-row: 140 / span 1;
-  grid-column: 37 / span 279;
-  background-color: #e0e4e8;
 }
 
 .energy__line5 {
   grid-row: span 1 / -26;
-  grid-column: 37 / span 279;
-  background-color: #e0e4e8;
 }
 
 .energy__bars {
