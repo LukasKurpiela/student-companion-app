@@ -14,26 +14,26 @@
   line-height: 1.5rem;
 }
 
-.energy__button100 {
-  background-color: var(secondary-400);
+.energy__button--100 {
+  background-color: var(--secondary-400);
   color: white;
   letter-spacing: 0.1em;
 }
 
-.energy__button75 {
-  background-color: var(secondary-300);
+.energy__button--75 {
+  background-color: var(--secondary-300);
   color: white;
   letter-spacing: 0.1em;
 }
 
-.energy__button50 {
-  background-color: var(secondary-200);
-  color: var(secondary-400);
+.energy__button--50 {
+  background-color: var(--secondary-200);
+  color: var(--secondary-400);
   letter-spacing: 0.1em;
 }
-.energy__button25 {
-  background-color: var(secondary-100);
-  color: var(secondary-400);
+.energy__button--25 {
+  background-color: var(--secondary-100);
+  color: var(--secondary-400);
   letter-spacing: 0.1em;
 }
 
