@@ -22,6 +22,7 @@
 
 .buddy-card__plus {
   position: absolute;
-  top: 47.2px;
-  right: 146px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
