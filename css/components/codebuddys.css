@@ -16,6 +16,7 @@
 
 .buddy-card__line {
   border-bottom: 1px solid var(--primary-200);
+  transform: translate(0, 50%);
   bottom: 5px;
   width: 100%;
 }
