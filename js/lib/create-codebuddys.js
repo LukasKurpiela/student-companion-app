@@ -1,4 +1,4 @@
-import { createElement } from './utility';
+import { createElement, createDate, findCurrentWeekDay } from './utility';
 import { codeBuddies } from './data';
 
 export default function createBuddyPage() {
@@ -26,4 +26,14 @@ export default function createBuddyPage() {
       team.buddy2
     );
   });
+}
+
+export function buddyHeader() {
+  const buddyHeader = document.querySelector('header');
+  const headerDate = createElement(
+    'p',
+    ['text__regular12'],
+    buddyHeader,
+    createDate(findCurrentWeekDay())
+  );
 }

@@ -36,6 +36,7 @@ export default function createDashboardPage() {
     buddyCard,
     codeBuddies[0].buddy2
   );
+  //ab hier Teams container
   const teamCardContainer = createElement(
     'article',
     ['team-card__container'],

@@ -1,4 +1,4 @@
-export { teams, codeBuddies };
+export { teams, codeBuddies, weekDays };
 
 const teams = [
   {
@@ -22,4 +22,14 @@ const teams = [
 const codeBuddies = [
   { buddy1: 'Sharine', buddy2: 'Sacid' },
   { buddy1: 'Lukas', buddy2: 'Helena' },
+];
+
+const weekDays = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
 ];
