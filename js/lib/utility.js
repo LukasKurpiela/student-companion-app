@@ -1,7 +1,11 @@
 import { weekDays } from './data';
 export { createElement, findCurrentWeekDay, createDate };
-export { createStars, createRectangles, interactiveRatingStars, interactiveRatingRectangles };
-
+export {
+  createStars,
+  createRectangles,
+  interactiveRatingStars,
+  interactiveRatingRectangles,
+};
 
 function createElement(tagName, classNames, parentNode, text = '') {
   const newElement = document.createElement(tagName);
@@ -34,53 +38,70 @@ const rectangleClear = '../../images/Rectangle Clear.svg';
 const rectangleFill = '../../images/Rectangle.svg';
 
 function createRating(source, count, className) {
-    let ratingSymbols = []
-    for(let i = 0; i < count; i++) {
-        const symbol = document.createElement('img');
-        symbol.classList.add(className);
-        symbol.src = source;
-        ratingSymbols.push(symbol);
-
-    }
-    return ratingSymbols;
+  let ratingSymbols = [];
+  for (let i = 0; i < count; i++) {
+    const symbol = document.createElement('img');
+    symbol.classList.add(className);
+    symbol.src = source;
+    ratingSymbols.push(symbol);
+    symbol.addEventListener('click', () => {
+      for (let j = i; j >= 0; j--) {
+        symbol.src = starFill;
+      }
+      for (let z = i + 1; z < symbol.length; z++) {
+        symbol.src = starClear;
+      }
+    });
+  }
+  return ratingSymbols;
 }
 
 function interactiveRatingStars() {
   const allStars = document.querySelectorAll('.journal__star');
-  for(let i = 0; i < allStars.length; i++) {
+  for (let i = 0; i < allStars.length; i++) {
     allStars[i].addEventListener('click', () => {
-      for(let j = i; j >= 0; j--) {
+      for (let j = i; j >= 0; j--) {
         allStars[j].src = starFill;
       }
-      for(let z = i + 1; z < allStars.length; z++) {
+      for (let z = i + 1; z < allStars.length; z++) {
         allStars[z].src = starClear;
       }
-    })
-}}
+    });
+  }
+  const starHeadline = document.querySelector('.journal__rating p');
+  starHeadline.addEventListener('click', () => {
+    allStars.forEach((star) => {
+      star.src = starClear;
+    });
+  });
+}
 
 function interactiveRatingRectangles() {
   const allRectangles = document.querySelectorAll('.journal__rectangle');
-  for(let i = 0; i < allRectangles.length; i++) {
+  for (let i = 0; i < allRectangles.length; i++) {
     allRectangles[i].addEventListener('click', () => {
-      for(let j = i; j >= 0; j--) {
+      for (let j = i; j >= 0; j--) {
         allRectangles[j].src = rectangleFill;
-
       }
-      for(let z = i + 1; z < allRectangles.length; z++) {
+      for (let z = i + 1; z < allRectangles.length; z++) {
         allRectangles[z].src = rectangleClear;
       }
-    })
-}}
-
-
-
+    });
+  }
+  const comprehensionHeadline = document.querySelector(
+    '.journal__comprehension p'
+  );
+  comprehensionHeadline.addEventListener('click', () => {
+    allRectangles.forEach((rectangle) => {
+      rectangle.src = rectangleClear;
+    });
+  });
+}
 
 function createStars() {
-    return createRating(starClear, 5, 'journal__star');
-    
+  return createRating(starClear, 5, 'journal__star');
 }
 
 function createRectangles() {
-    return createRating(rectangleClear, 10, 'journal__rectangle');
+  return createRating(rectangleClear, 10, 'journal__rectangle');
 }
-
