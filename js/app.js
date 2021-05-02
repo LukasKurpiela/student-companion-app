@@ -3,7 +3,10 @@ import createTeamsPage from './lib/create-teams';
 import createDashboardPage from './lib/create-dashboard';
 import { journalFormDate } from './lib/create-journal-form';
 import addSymbols from './lib/rating';
-import { interactiveRatingStars, interactiveRatingRectangles } from './lib/utility';
+import {
+  interactiveRatingStars,
+  interactiveRatingRectangles,
+} from './lib/utility';
 
 if (document.querySelector('#codebuddy__container')) {
   createBuddyPage();
@@ -18,4 +21,4 @@ if (document.querySelector('#codebuddy__container')) {
   interactiveRatingRectangles();
 } else {
   journalFormDate();
-} 
+}
