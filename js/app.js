@@ -15,10 +15,9 @@ if (document.querySelector('#codebuddy__container')) {
   createTeamsPage();
 } else if (document.querySelector('#dashboard__container')) {
   createDashboardPage();
-} else if (document.querySelector('.journal__stars')) {
+} else {
+  journalFormDate();
   addSymbols();
   interactiveRatingStars();
   interactiveRatingRectangles();
-} else {
-  journalFormDate();
 }
