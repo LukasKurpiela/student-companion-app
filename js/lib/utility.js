@@ -44,16 +44,16 @@ function createRating(source, count, className) {
     symbol.classList.add(className);
     symbol.src = source;
     ratingSymbols.push(symbol);
-    symbol.addEventListener('click', () => {
-      for (let j = i; j >= 0; j--) {
-        symbol.src = starFill;
-      }
-      for (let z = i + 1; z < symbol.length; z++) {
-        symbol.src = starClear;
-      }
-    });
   }
   return ratingSymbols;
+}
+
+function createStars() {
+  return createRating(starClear, 5, 'journal__star');
+}
+
+function createRectangles() {
+  return createRating(rectangleClear, 10, 'journal__rectangle');
 }
 
 function interactiveRatingStars() {
@@ -96,12 +96,4 @@ function interactiveRatingRectangles() {
       rectangle.src = rectangleClear;
     });
   });
-}
-
-function createStars() {
-  return createRating(starClear, 5, 'journal__star');
-}
-
-function createRectangles() {
-  return createRating(rectangleClear, 10, 'journal__rectangle');
 }
