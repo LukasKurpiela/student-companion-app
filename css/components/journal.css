@@ -90,6 +90,10 @@
   background-color: #ff5a36;
 }
 
+.journal__save:hover {
+  cursor: pointer;
+}
+
 .journal__save > img {
   width: 14.63px;
   height: 11.2px;
