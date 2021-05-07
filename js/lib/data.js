@@ -10,6 +10,7 @@ export {
   fetchCurrentTeamsData,
   fetchBuddyData,
   fetchTodaysBuddyData,
+  fetchJournalEntries
 };
 
 const teams = [
@@ -68,5 +69,13 @@ function fetchTodaysBuddyData() {
     .then((result) => result.json())
     .then((buddyData) =>
       createTodaysBuddy(buddyData[Math.floor(Math.random() * buddyData.length)])
+    );
+}
+
+function fetchJournalEntries() {
+  fetch('https://muc-2020-w1-student-api.vercel.app/api/journals')
+    .then((result) => result.json())
+    .then((journalData) =>
+      createJournalEntries(journalData)
     );
 }

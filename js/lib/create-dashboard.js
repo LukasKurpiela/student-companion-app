@@ -76,3 +76,30 @@ export function createCurrentTeam(team) {
     }
   }
 }
+
+function createJournalEntries(entries) {
+  const journalCardHeading = createElement(
+    'h5',
+    ['text__semi14', 'team-card__heading'],
+    dashboardContainer,
+    "Yesterday's Journal:"
+  );
+  entries.forEach((entry) => {
+    const journalCard = createElement(
+      'article',
+      ['card', 'border__shadow--grey'],
+      dashboardContainer
+    );
+    const ratingSection = createElement(
+      'section',
+      ['card__rating'],
+      journalCard
+    );
+    const ratingHeadline = createElement(
+      'p',
+      ['text__regular12'],
+      ratingSection,
+      'Rating:'
+    );
+  });
+}
