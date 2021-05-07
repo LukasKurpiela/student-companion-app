@@ -1,9 +1,19 @@
 import { createElement } from './utility';
 import { teams } from './data';
-import { codeBuddies } from './data';
+import {
+  codeBuddies,
+  fetchCurrentTeamsData,
+  fetchTodaysBuddyData,
+} from './data';
 
+const dashboardContainer = document.querySelector('#dashboard__container');
 export default function createDashboardPage() {
-  const dashboardContainer = document.querySelector('#dashboard__container');
+  fetchTodaysBuddyData();
+  //ab hier Teams container
+  // fetchCurrentTeamsData();
+  setTimeout(fetchCurrentTeamsData, 100);
+}
+export function createTodaysBuddy(buddy) {
   const teamCardContainerBuddys = createElement(
     'article',
     ['team-card__container'],
@@ -24,7 +34,7 @@ export default function createDashboardPage() {
     'p',
     ['buddy-card__item', 'text__semi16--light'],
     buddyCard,
-    codeBuddies[0].buddy1
+    buddy[0]
   );
   const divider = createElement('span', ['buddy-card__line'], buddyCard);
   const plusSign = createElement('img', ['buddy-card__plus'], divider);
@@ -34,9 +44,10 @@ export default function createDashboardPage() {
     'p',
     ['buddy-card__item', 'text__semi16--light'],
     buddyCard,
-    codeBuddies[0].buddy2
+    buddy[1]
   );
-  //ab hier Teams container
+}
+export function createCurrentTeam(team) {
   const teamCardContainer = createElement(
     'article',
     ['team-card__container'],
@@ -53,14 +64,14 @@ export default function createDashboardPage() {
     ['team-card', 'border__in--light'],
     teamCardContainer
   );
-  for (let i = 0; i < teams[0].teamMembers.length; i++) {
+  for (let i = 0; i < team.length; i++) {
     const teamCardMember = createElement(
       'p',
       ['team-card__item', 'text__semi16--light'],
       teamCard,
-      teams[0].teamMembers[i]
+      team[i]
     );
-    if (i < teams[0].teamMembers.length - 1) {
+    if (i < team.length - 1) {
       const teamDivider = createElement('span', ['team-card__line'], teamCard);
     }
   }

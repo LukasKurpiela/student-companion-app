@@ -7,12 +7,14 @@ import {
   interactiveRatingStars,
   interactiveRatingRectangles,
 } from './lib/utility';
+import { fetchTeamsData, fetchBuddyData } from './lib/data';
 
 if (document.querySelector('#codebuddy__container')) {
-  createBuddyPage();
+  fetchBuddyData();
   buddyHeader();
 } else if (document.querySelector('#teams__container')) {
-  createTeamsPage();
+  // createTeamsPage();
+  fetchTeamsData();
 } else if (document.querySelector('#dashboard__container')) {
   createDashboardPage();
 } else {

@@ -1,9 +1,9 @@
 import { createElement } from './utility';
-import { teams } from './data';
+// import { teams } from './data';
 
-export default function createTeamsPage() {
+export default function createTeamsPage(teams) {
   const teamContainer = document.querySelector('#teams__container');
-  teams.forEach((team) => {
+  teams.forEach((team, index) => {
     /* const teamCard = document.createElement('article');
     teamCard.classList.add('team_card__container');
     teamContainer.appendChild(teamCard) */
@@ -16,21 +16,21 @@ export default function createTeamsPage() {
       'h5',
       ['text__semi14', 'team-card__heading'],
       teamCardContainer,
-      team.teamName
+      'Team ' + (index + 1)
     );
     const teamCard = createElement(
       'section',
       ['team-card', 'border__in--light'],
       teamCardContainer
     );
-    for (let i = 0; i < team.teamMembers.length; i++) {
+    for (let i = 0; i < team.length; i++) {
       const teamCardMember = createElement(
         'p',
         ['team-card__item', 'text__semi16--light'],
         teamCard,
-        team.teamMembers[i]
+        team[i]
       );
-      if (i < team.teamMembers.length - 1) {
+      if (i < team.length - 1) {
         const teamDivider = createElement(
           'span',
           ['team-card__line'],

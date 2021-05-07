@@ -1,4 +1,16 @@
-export { teams, codeBuddies, weekDays };
+import createTeamsPage from './create-teams';
+import { createCurrentTeam, createTodaysBuddy } from './create-dashboard';
+import createBuddyPage from './create-codebuddys';
+
+export {
+  teams,
+  codeBuddies,
+  weekDays,
+  fetchTeamsData,
+  fetchCurrentTeamsData,
+  fetchBuddyData,
+  fetchTodaysBuddyData,
+};
 
 const teams = [
   {
@@ -33,3 +45,28 @@ const weekDays = [
   'Friday',
   'Saturday',
 ];
+function fetchTeamsData() {
+  fetch('https://muc-2020-w1-student-api.vercel.app/api/teams')
+    .then((result) => result.json())
+    .then((teamData) => createTeamsPage(teamData));
+}
+
+function fetchCurrentTeamsData() {
+  fetch('https://muc-2020-w1-student-api.vercel.app/api/teams')
+    .then((result) => result.json())
+    .then((teamData) => createCurrentTeam(teamData[3]));
+}
+
+function fetchBuddyData() {
+  fetch('https://muc-2020-w1-student-api.vercel.app/api/buddies')
+    .then((result) => result.json())
+    .then((buddyData) => createBuddyPage(buddyData));
+}
+
+function fetchTodaysBuddyData() {
+  fetch('https://muc-2020-w1-student-api.vercel.app/api/buddies')
+    .then((result) => result.json())
+    .then((buddyData) =>
+      createTodaysBuddy(buddyData[Math.floor(Math.random() * buddyData.length)])
+    );
+}

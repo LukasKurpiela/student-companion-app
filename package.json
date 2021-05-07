@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/LukasKurpiela/student-companion-app#readme",
   "devDependencies": {
-    "snowpack": "^3.3.5"
+    "snowpack": "^3.3.7"
   }
 }

@@ -1,30 +1,31 @@
 import { createElement, createDate, findCurrentWeekDay } from './utility';
 import { codeBuddies } from './data';
 
-export default function createBuddyPage() {
+export default function createBuddyPage(buddies) {
   const buddyContainer = document.querySelector('#codebuddy__container');
-  codeBuddies.forEach((team) => {
+  buddies.forEach((team) => {
     const buddyCard = createElement(
       'section',
       ['buddy-card', 'border__in--light'],
       buddyContainer
     );
-    const firstBuddy = createElement(
-      'p',
-      ['buddy-card__item', 'text__semi16--light'],
-      buddyCard,
-      team.buddy1
-    );
-    const divider = createElement('span', ['buddy-card__line'], buddyCard);
-    const plusSign = createElement('img', ['buddy-card__plus'], divider);
-    plusSign.src = '../images/Plus.svg';
-    plusSign.alt = 'Plus Icon';
-    const secondBuddy = createElement(
-      'p',
-      ['buddy-card__item', 'text__semi16--light'],
-      buddyCard,
-      team.buddy2
-    );
+
+    console.log(buddies);
+    console.log(team);
+    team.forEach((buddy, index) => {
+      const firstBuddy = createElement(
+        'p',
+        ['buddy-card__item', 'text__semi16--light'],
+        buddyCard,
+        buddy
+      );
+      if (index === 0) {
+        const divider = createElement('span', ['buddy-card__line'], buddyCard);
+        const plusSign = createElement('img', ['buddy-card__plus'], divider);
+        plusSign.src = '../images/Plus.svg';
+        plusSign.alt = 'Plus Icon';
+      }
+    });
   });
 }
 
