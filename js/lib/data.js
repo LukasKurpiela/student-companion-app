@@ -1,6 +1,11 @@
 import createTeamsPage from './create-teams';
-import { createCurrentTeam, createTodaysBuddy } from './create-dashboard';
+import {
+  createCurrentTeam,
+  createTodaysBuddy,
+  createYesterdaysJournalEntry,
+} from './create-dashboard';
 import createBuddyPage from './create-codebuddys';
+import { createJournalEntries } from './create-journal';
 
 export {
   teams,
@@ -10,7 +15,8 @@ export {
   fetchCurrentTeamsData,
   fetchBuddyData,
   fetchTodaysBuddyData,
-  fetchJournalEntries
+  fetchJournalEntries,
+  fetchYesterdaysJournal,
 };
 
 const teams = [
@@ -72,10 +78,16 @@ function fetchTodaysBuddyData() {
     );
 }
 
-function fetchJournalEntries() {
+function fetchJournalEntries(parentNode) {
+  fetch('https://muc-2020-w1-student-api.vercel.app/api/journals')
+    .then((result) => result.json())
+    .then((journalData) => createJournalEntries(journalData, parentNode));
+}
+
+function fetchYesterdaysJournal(parentNode) {
   fetch('https://muc-2020-w1-student-api.vercel.app/api/journals')
     .then((result) => result.json())
     .then((journalData) =>
-      createJournalEntries(journalData)
+      createYesterdaysJournalEntry(journalData[0], parentNode)
     );
 }

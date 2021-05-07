@@ -5,6 +5,11 @@ export {
   createRectangles,
   interactiveRatingStars,
   interactiveRatingRectangles,
+  createRating,
+  starClear,
+  starFill,
+  rectangleClear,
+  rectangleFill,
 };
 
 function createElement(tagName, classNames, parentNode, text = '') {
@@ -37,12 +42,13 @@ const starFill = '../../images/Star.svg';
 const rectangleClear = '../../images/Rectangle Clear.svg';
 const rectangleFill = '../../images/Rectangle.svg';
 
-function createRating(source, count, className) {
+function createRating(source, count, className, altTag = '') {
   let ratingSymbols = [];
   for (let i = 0; i < count; i++) {
     const symbol = document.createElement('img');
     symbol.classList.add(className);
     symbol.src = source;
+    symbol.alt = altTag;
     ratingSymbols.push(symbol);
   }
   return ratingSymbols;

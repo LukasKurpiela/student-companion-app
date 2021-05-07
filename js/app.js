@@ -8,6 +8,7 @@ import {
   interactiveRatingRectangles,
 } from './lib/utility';
 import { fetchTeamsData, fetchBuddyData } from './lib/data';
+import { createJournalPage } from './lib/create-journal';
 
 if (document.querySelector('#codebuddy__container')) {
   fetchBuddyData();
@@ -17,6 +18,8 @@ if (document.querySelector('#codebuddy__container')) {
   fetchTeamsData();
 } else if (document.querySelector('#dashboard__container')) {
   createDashboardPage();
+} else if (document.querySelector('#journal__container')) {
+  createJournalPage();
 } else {
   journalFormDate();
   addSymbols();
