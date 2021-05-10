@@ -1,16 +1,16 @@
-import { createElement, createDate } from "./utility";
+import { createElement, createDate } from './utility';
 
 export function journalFormDate() {
-  const journalDate = document.querySelector("#journal__date");
-  journalDate.innerHTML = createDate("TODAY");
+  const journalDate = document.querySelector('#journal__date');
+  journalDate.innerHTML = createDate('TODAY');
 }
 
-const form = document.querySelector("form");
-const submitButton = document.querySelector(".journal__save");
+const form = document.querySelector('form');
+const submitButton = document.querySelector('.journal__save');
 let journalEntries = loadFromLocalStorage() || [];
 
 export function submitEntry() {
-  submitButton.addEventListener("click", (event) => {
+  submitButton.addEventListener('click', (event) => {
     event.preventDefault();
     const motto = form.motto.value;
     const notes = form.notes.value;
@@ -21,25 +21,26 @@ export function submitEntry() {
 }
 
 function addJournalEntry(motto, notes) {
-  let newEntry = {};
-  newEntry.id = "d4bb0672-1225-11eb-adc1-0242ac120002";
-  newEntry.rating = 3;
-  newEntry.comprehension = 8;
-  newEntry.motto = motto;
-  newEntry.notes = notes;
+  let newEntry = {
+    id: 'd4bb0672-1225-11eb-adc1-0242ac120002',
+    rating: 3,
+    comprehension: 8,
+    motto: motto,
+    notes: notes,
+  };
   journalEntries.push(newEntry);
   saveToLocalStorage(journalEntries);
   //postJournalEntry(newEntry);
 }
 
 function saveToLocalStorage(entry) {
-  localStorage.setItem("Journal Entries", JSON.stringify(entry));
+  localStorage.setItem('Journal Entries', JSON.stringify(entry));
 }
 
 function loadFromLocalStorage() {
   try {
     const entriesFromLocalStorage = JSON.parse(
-      localStorage.getItem("Journal Entries")
+      localStorage.getItem('Journal Entries')
     );
     return entriesFromLocalStorage;
   } catch (error) {
